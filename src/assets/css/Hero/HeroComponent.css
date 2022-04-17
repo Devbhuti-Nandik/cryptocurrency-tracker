@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+:root{
+    --mainBlack:#212121;
+    --mainOrange:#fe6546;
+    --mainWhite:#ffffff;
+
+    --maxSpacing:1.3px;
+    --minSpacing:1.2px;
+}
+.hero__main{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.1);
+}
+.para_1{
+    font-size: 1rem;
+    font-family: 'Esteban', serif;
+}
+.para_2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: var(--minSpacing);
+}
+.para_3{
+    font-size: 1.5rem;
+    font-family: 'Esteban', serif;
+}
+.hero__text{
+    margin: 5%;
+    color: var(--mainWhite);
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+}
+.hero__image{
+    margin-top: 5%;
+    height: 40%;
+    width: 40%;
+}
+
+@media screen and (max-width:1200px) {
+    .hero__image img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .hero__main{
+        display: block;
+        overflow-x: hidden;
+    }
+    .hero__image{
+        margin-left: 15%;
+        width: 70%;
+    }
+    .hero__image img{
+        width: 100%;
+    }
+    .hero__text{
+        width: 100%;
+    }
+    .para_3{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .hero__main{
+        width: min-content;
+        overflow-x:initial;
+        min-height: 75vh;
+    }
+    .hero__text{
+        width: 112%;
+    }
+    .para_2{
+        font-size: 2.5rem;
+    }
+    .para_3{
+        font-size: 1.3rem;
+    }
+    .hero__image{
+        margin-left: 15%;
+        width: 100%;
+    }
+}

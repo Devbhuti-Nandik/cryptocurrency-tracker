@@ -1,0 +1,13 @@
+:root{
+    --mainBlack:#212121;
+    --mainOrange:#fe6546;
+    --mainWhite:#ffffff;
+
+    --maxSpacing:1.3px;
+}
+
+.header__selectbox{
+    width: 100;
+    height: 40;
+    margin-left: 15px;
+}

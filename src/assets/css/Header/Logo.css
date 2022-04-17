@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap');
+
+
+:root{
+    --mainBlack:#212121;
+    --mainOrange:#fe6546;
+    --mainWhite:#ffffff;
+
+    --maxSpacing:1.3px;
+}
+
+.logoText{
+    color: var(--mainWhite);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: var(--maxSpacing);
+    margin-top: 0.5%;
+}
+
+@media screen and (max-width:650px) {
+    .logoText{
+        margin-top: 1.9%;
+    }
+}
