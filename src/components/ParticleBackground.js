@@ -12,6 +12,7 @@ export default function ParticleBackground() {
 
   return (
     <Particles
+      style={{maxHeight:'60vh', minWidth:'30vw'}}
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
