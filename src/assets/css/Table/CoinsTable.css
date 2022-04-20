@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 :root {
   --mainBlack: #212121;
   --mainOrange: #fe6546;
@@ -5,6 +8,7 @@
 
   --primaryBlack:#000000;
   --secondaryBlack: #3e3e3e;
+  --secondaryWhite:#c6c4c4;
 
   --maxSpacing: 1.3px;
   --minSpacing: 1.2px;
@@ -22,10 +26,11 @@
   min-height: 30vh;
   width: 90%;
   margin: 3% 5%;
-  background: rgba(75, 74, 74, 0.35);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  
+  background: rgba(116, 112, 112, 0.3);
+  box-shadow: 0 4px 30px rgba(40, 40, 40, 0.01);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(75, 74, 74, 0.18);
 }
 .ct__search {
@@ -54,27 +59,29 @@
   outline: none;
   margin-left: 5%;
   caret-color: var(--mainWhite);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   padding: 0.2rem;
   color: var(--mainWhite);
 }
-
 .ct__table-main{
   padding-top: 5%;
   flex: 1;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .ct__table-head th{
   text-align: center;
-  color: var(--mainWhite);
+  color: var(--secondaryWhite);
   border: none;
-  align-items: center;
+  font-weight: 500;
+  opacity: 0.55;
+  font-family: 'Poppins', sans-serif;
+  padding:20px 90px;
 }
+
+
 @media screen and (max-width:800px) {
   .ct__search{
     width: 30%;
