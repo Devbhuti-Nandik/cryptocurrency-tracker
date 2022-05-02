@@ -8,9 +8,8 @@
 
   --primaryBlack: #000000;
   --secondaryBlack: #3e3e3e;
-  --primaryWhite:#5a5a5a;
-  --secondaryWhite: #c6c4c4; 
-  
+  --primaryWhite: #5a5a5a;
+  --secondaryWhite: #c6c4c4;
 
   --maxSpacing: 1.3px;
   --minSpacing: 1.2px;
@@ -20,18 +19,24 @@
   background-color: var(--primaryBlack);
   min-height: 80vh;
   position: relative;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .ct__table {
   flex: 1;
-  background: linear-gradient(to right, #212121, #3e3e3e, #212121) !important;
+  /* background: linear-gradient(to right, #212121, #3e3e3e, #212121) !important; */
   border-radius: 40px;
   min-height: 30vh;
   width: 90%;
   margin: 3% 5% 1% 5%;
 
   background: rgba(116, 112, 112, 0.3);
-  box-shadow: 0 4px 30px rgba(40, 40, 40, 0.01);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(75, 74, 74, 0.18);
 }

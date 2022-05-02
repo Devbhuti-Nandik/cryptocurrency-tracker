@@ -43,7 +43,7 @@ export default function CoinsTable() {
     const { data } = await axios.get(Market(currency));
     setList(data);
     //console.log(typeof(list.length));
-    //console.log(dailyData);
+    //console.log(data);
     setLoading(false);
   };
 
@@ -170,7 +170,7 @@ export default function CoinsTable() {
                     handleSearch(),
                     getComparator(orderDirection, valueToOrderBy)
                   )
-                    .slice((page - 1) * 10, (page - 1) * 10 + 10)
+                    .slice((page - 1) * 7, (page - 1) * 7 + 7)
                     .map((item) => {
                       let profit = item.price_change_percentage_24h >= 0;
                       return (
@@ -314,7 +314,7 @@ export default function CoinsTable() {
         <Pagination
           onChange={(_, value) => {
             setPage(value);
-            window.scroll(0, 1000);
+            window.scroll(0, 1200);
           }}
           count={handleSearch().length / 10}
           shape="rounded"

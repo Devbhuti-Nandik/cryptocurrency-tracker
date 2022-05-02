@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+:root {
+  --maxSpacing: 3px;
+  --minSpacing: 1.2px;
+}
+
+.ranked {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  margin: 3% 5%;
+  margin-bottom: 0;
+  min-height: 20vh;
+  width: 20%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(1.5px);
+}
+h1 {
+  font-family: "Rubik", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: var(--maxSpacing);
+}

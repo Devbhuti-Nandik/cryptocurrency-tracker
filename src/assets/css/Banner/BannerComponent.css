@@ -1,44 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
-:root{
-    --mainBlack:#212121;
-    --mainOrange:#fe6546;
-    --mainWhite:#ffffff;
+@import url("https://fonts.googleapis.com/css2?family=Esteban&display=swap");
+:root {
+  --mainBlack: #212121;
+  --mainOrange: #fe6546;
+  --mainWhite: #ffffff;
 
-    --maxSpacing:1.3px;
-    --minSpacing:1.2px;
-}
-
-.banner{
-    min-height: 60vh;
-    background-color:var(--mainBlack);
-    position: relative;
-}
-.tagline__head{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--mainWhite);
-    text-transform:uppercase;
-    font-size: 3.5rem;
-    font-weight: bold;
-    padding-top: 3%;
-}
-.tagline__sub{
-    text-align: center;
-    color: var(--mainWhite);
-    text-transform: capitalize;
-    font-size: 1rem;
-    font-family: 'Esteban', serif;
-    letter-spacing: var(--maxSpacing);
-    padding-top: 0.5rem;
+  --maxSpacing: 1.3px;
+  --minSpacing: 1.2px;
 }
 
-@media screen and (max-width:800px){
-    .tagline__head{
-        font-size: 2.5rem;
-    }
+.banner {
+  min-height: 60vh;
+  background-color: var(--mainBlack);
+  position: relative;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2.5px);
 }
-@media screen and (max-width:450px){
-    .banner{
-        min-height: 70vh;
-    }
+.tagline__head {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-top: 3%;
+}
+.tagline__sub {
+  text-align: center;
+  color: var(--mainWhite);
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: "Esteban", serif;
+  letter-spacing: var(--maxSpacing);
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .tagline__head {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner {
+    min-height: 70vh;
+  }
 }
