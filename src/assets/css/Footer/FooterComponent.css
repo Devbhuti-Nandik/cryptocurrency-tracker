@@ -2,6 +2,7 @@
   --mainBlack: #212121;
   --mainOrange: #fe6546;
   --mainWhite: #ffffff;
+  --mainYellow: #eebc1d;
 
   --primaryBlack: #000000;
   --secondaryBlack: #3e3e3e;
@@ -29,8 +30,8 @@
 .footer__link {
   width: 50%;
 }
-.footer__link h1{
-    color: var(--mainOrange);
+.footer__link h1 {
+  color: var(--mainYellow);
 }
 .footer__border {
   height: 10rem;

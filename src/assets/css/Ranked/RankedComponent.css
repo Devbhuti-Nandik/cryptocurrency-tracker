@@ -31,3 +31,71 @@ h1 {
   text-transform: capitalize;
   letter-spacing: var(--maxSpacing);
 }
+
+@media screen and (max-width: 800px) {
+  .ranked {
+    background-attachment: scroll;
+    text-align: center;
+    align-items: center;
+  }
+  .card {
+    width: 30%;
+    min-height: 30vh;
+  }
+  h1 {
+    margin-top: 10%;
+    font-size: 1.5rem !important;
+  }
+  .tab__card{
+    flex-direction: column;
+  }
+  .tab__card img{
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .tab__card-img{
+    margin-top: 3% !important;
+  }
+  .mobile__card h1{
+    font-size: 1.7rem !important;
+  }
+  .tab__card-dominance{
+    margin-top: 20% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ranked {
+    flex-direction: column;
+    background-attachment: scroll;
+    text-align: center;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    min-height: 30vh;
+  }
+  h1 {
+    margin-top: 10%;
+    font-size: 2.5rem !important;
+  }
+  
+}
+@media screen and (max-width: 380px) {
+  .ranked {
+    flex-direction: column;
+    background-attachment: scroll;
+    text-align: center;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    min-height: 30vh;
+  }
+  h1 {
+    margin-top: 10%;
+    font-size: 2.3rem !important;
+  }
+  .mobile__card {
+    margin-top: 3% !important;
+  }
+}

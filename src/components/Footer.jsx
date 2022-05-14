@@ -34,7 +34,7 @@ export default function Footer() {
           <LinkedInIcon sx={{ color: "white", fontSize: 40 }} />
         </div>
         <div>
-        <h4 style={{color:"white",fontSize:'1.3rem',marginTop:'3.2%',letterSpacing:'2px'}}>&copy; Nandik Devbhuti || 2022</h4>
+        <h4 style={{color:"white",fontSize:'1.3rem',marginTop:'3.2%',letterSpacing:'2px'}}>&copy; All rights reserved || 2022</h4>
         </div>
       </div>
     </div>

@@ -53,13 +53,16 @@ export default function Ranked() {
           {/*Top Rank + Name */}
           <section className="card">
             <div
+              className="tab__card"
               style={{
                 display: "flex",
                 justifyContent: "space-evenly",
                 alignItems: "center",
               }}
             >
-              <div style={{ textAlign: "center", marginTop: "15%" }}>
+              <div 
+              className="mobile__card"
+              style={{ textAlign: "center", marginTop: "15%" }}>
                 <h1
                   style={{
                     color: "#fe6546",
@@ -80,6 +83,7 @@ export default function Ranked() {
                 </h1>
               </div>
               <div
+                className="tab__card-img"
                 style={{
                   textAlign: "center",
                   marginTop: "20%",
@@ -97,6 +101,7 @@ export default function Ranked() {
           {/*ATH*/}
           <section className="card">
             <div
+              className="mobile__card"
               style={{
                 textAlign: "center",
                 marginTop: "20%",
@@ -126,6 +131,7 @@ export default function Ranked() {
           {/*Graph */}
           <section className="card">
             <div
+              className="tab__card-dominance"
               style={{
                 width: "90%",
                 textAlign: "center",

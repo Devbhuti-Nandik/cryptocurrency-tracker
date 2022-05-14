@@ -12,3 +12,4 @@ export const MarketChart = (id, currency) =>
 
 export const Market = (currency) =>
 `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=gecko_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h`;
+

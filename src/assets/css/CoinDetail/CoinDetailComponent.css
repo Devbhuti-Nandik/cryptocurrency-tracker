@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Esteban&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+  --mainBlack: #212121;
+  --mainOrange: #fe6546;
+  --mainWhite: #ffffff;
+
+  --primaryBlack: #000000;
+  --secondaryBlack: #3e3e3e;
+  --primaryWhite: #5a5a5a;
+  --secondaryWhite: #c6c4c4;
+
+  --maxSpacing: 1.3px;
+  --minSpacing: 1.2px;
+}
+
+.cp__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+}
+.cp__left {
+  width: 35%;
+  text-align: center;
+  border-right: 2px solid var(--primaryWhite);
+  border-top: 120px solid transparent;
+  border-bottom: 120px solid transparent;
+  left: 3%;
+}
+.cp__right {
+  width: 65%;
+  text-align: center;
+}
+.cp__left-img{
+    height: 10rem;
+    width: 10rem;
+}
+.cp__left-head{
+    color: var(--mainWhite);
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    letter-spacing: var(--minSpacing);
+    margin-top: 3%;
+}
+
+.cp__left-text{
+    color: var(--mainWhite);
+    font-family: "Esteban", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: var(--minSpacing);
+    text-align: left;
+    margin-top: 3%;
+    line-height: 3.5vh;
+    letter-spacing: var(--minSpacing);
+}
+
+.cp__right-btn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3%;
+}
+.cp__right-btn button{
+  width: 20%;
+  padding: 1%;
+  border: 1.5px solid var(--mainOrange);
+  background-color: transparent;
+  color: var(--mainWhite);
+  text-align: center;
+  border-radius: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.cp__right-btn button:hover{
+  background-color: var(--mainOrange)!important;
+  font-weight: bold;
+  color: var(--mainBlack);
+}
+
+@media screen and (max-width:1000px) {
+    .cp__main{
+        display: block;
+    }
+    .cp__left{
+        width: 100%;
+        border: none;
+    }
+    .cp__right{
+        width: 100%;
+        margin-top: 5%;
+    }
+}
