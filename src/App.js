@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AlertCustom from "./components/AlertCustom";
 import Header from "./components/Header";
@@ -7,7 +7,7 @@ import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <BrowserRouter basename="/cryptocurrency-tracker">
+    <HashRouter >
       <div className="main">
         <Header></Header>
         <Routes>
@@ -16,7 +16,7 @@ function App() {
         </Routes>
       </div>
       <AlertCustom/>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
