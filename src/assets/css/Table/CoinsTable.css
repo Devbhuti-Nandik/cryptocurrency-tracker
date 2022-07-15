@@ -24,11 +24,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 .ct__table {
   flex: 1;
-  /* background: linear-gradient(to right, #212121, #3e3e3e, #212121) !important; */
   border-radius: 40px;
   min-height: 30vh;
   width: 90%;
@@ -128,6 +126,34 @@ th .Mui-active,
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .ct__table-main::-webkit-scrollbar{
+    height: 12px;
+  }
+  
+  .ct__table-main::-webkit-scrollbar-track{
+    background: transparent;
+  }
+  
+  /*Handle*/
+  .ct__table-main::-webkit-scrollbar-thumb{
+    border:4px solid rgba(0,0,0,0);
+    background-clip: padding-box;
+    border-radius: 20px;
+    background-color: #c0c0c0;
+    
+  }
+  
+  .ct__table-main::-webkit-scrollbar-track-piece:end{
+    background: transparent;
+    margin-right: 30px;
+  }
+  
+  .ct__table-main::-webkit-scrollbar-track-piece:start{
+    background: transparent;
+    margin-left: 30px;
+  }
+}
 @media screen and (max-width: 700px) {
   .ct__search {
     margin-left: 35%;

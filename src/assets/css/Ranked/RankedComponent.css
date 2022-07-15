@@ -23,13 +23,18 @@
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.15);
-
   backdrop-filter: blur(1.5px);
 }
 h1 {
   font-family: "Rubik", sans-serif;
   text-transform: capitalize;
   letter-spacing: var(--maxSpacing);
+}
+
+@media screen and (max-width: 1280px) {
+  h1{
+    font-size: 1.5rem!important;
+  }
 }
 
 @media screen and (max-width: 800px) {

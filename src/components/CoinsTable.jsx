@@ -43,7 +43,7 @@ export default function CoinsTable() {
     const { data } = await axios.get(Market(currency));
     setList(data);
     //console.log(typeof(list.length));
-    //console.log(data);
+    //console.log("-->",data);
     setLoading(false);
   };
 

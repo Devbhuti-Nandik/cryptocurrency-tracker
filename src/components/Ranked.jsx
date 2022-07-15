@@ -6,9 +6,10 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Graph from "../components/Graph";
 import { CryptoState } from "../CryptoContext";
 
+
 export default function Ranked() {
   const [loading, setLoading] = useState(false);
-  const { currency, symbol } = CryptoState();
+  const { currency} = CryptoState();
 
   const [topRank, setTopRank] = useState();
   const [topName, setTopName] = useState("");
@@ -33,8 +34,6 @@ export default function Ranked() {
         setTopGraphPoints(item.sparkline_in_7d.price);
       }
     });
-    //console.log(typeof(list.length));
-    console.log(data);
     setLoading(false);
   };
 
@@ -43,6 +42,7 @@ export default function Ranked() {
   }, [currency]);
 
   return (
+    
     <>
       {loading ? (
         <div style={{ display: "flex", justifyContent: "center" }}>
@@ -60,9 +60,10 @@ export default function Ranked() {
                 alignItems: "center",
               }}
             >
-              <div 
-              className="mobile__card"
-              style={{ textAlign: "center", marginTop: "15%" }}>
+              <div
+                className="mobile__card"
+                style={{ textAlign: "center", marginTop: "15%" }}
+              >
                 <h1
                   style={{
                     color: "#fe6546",
@@ -121,7 +122,7 @@ export default function Ranked() {
                   color: "#fe6546",
                   fontWeight: "bold",
                   fontSize: "1.5rem",
-                  marginTop:'3%'
+                  marginTop: "3%",
                 }}
               >
                 {formatNumber(topATH)} {currency}
@@ -143,14 +144,23 @@ export default function Ranked() {
                   color: "#ffffff",
                   fontWeight: "bold",
                   fontSize: "1.7rem",
-                  marginLeft:'10%'
+                  marginLeft: "10%",
                 }}
               >
                 {topName} Dominance
               </h1>
-              <div style={{marginLeft:'10%',marginTop:'3%'}}>
+              <div style={{ marginLeft: "10%", marginTop: "3%" }}>
                 <Graph pointData={topGraphPoints} />
-                <h4 style={{textAlign:'right',color:'#ffffff',marginBottom:'5%'}}> 7 days</h4>
+                <h4
+                  style={{
+                    textAlign: "right",
+                    color: "#ffffff",
+                    marginBottom: "5%",
+                  }}
+                >
+                  {" "}
+                  7 days
+                </h4>
               </div>
             </div>
           </section>

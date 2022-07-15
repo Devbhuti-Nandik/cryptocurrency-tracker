@@ -1,0 +1,116 @@
+.container {
+  width: 30vw;
+  height: 100vh;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  height: 25%;
+  gap: 20px;
+}
+
+.user-profile_picture {
+  width: 7rem !important;
+  height: 7rem !important;
+  cursor: pointer !important;
+  background-color: #eebc1d !important;
+  object-fit: contain !important;
+}
+
+.user-profile_details {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.3rem;
+  color: #000000;
+  background-color: #eebc1d;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  color: #eebc1d;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+
+}
+
+.user-favourites {
+  font-family: "Esteban", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.user-favourites_list {
+  margin-top: 3%;
+  height: 20rem;
+  overflow-y: auto;
+  width: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.user-favourites_list::-webkit-scrollbar{
+  width: 12px;
+}
+
+.user-favourites_list::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+/*Handle*/
+.user-favourites_list::-webkit-scrollbar-thumb{
+  border:4px solid rgba(0,0,0,0);
+  background-clip: padding-box;
+  border-radius: 20px;
+  background-color: #c0c0c0;
+  
+}
+
+.user-favourites_list::-webkit-scrollbar-track-piece:end{
+  background: transparent;
+  margin-bottom: 30px;
+}
+
+.user-favourites_list::-webkit-scrollbar-track-piece:start{
+  background: transparent;
+  margin-top: 30px;
+}
+
+.list{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 32px;
+  padding-bottom: 3px;
+  border-bottom: 2px dashed var(--primaryWhite);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  width: 60%;
+}
+
+.list:hover{
+  color: #eebc1d;
+}
