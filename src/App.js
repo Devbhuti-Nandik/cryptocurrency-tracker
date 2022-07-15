@@ -7,7 +7,7 @@ import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cryptocurrency-tracker">
       <div className="main">
         <Header></Header>
         <Routes>
